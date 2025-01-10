@@ -12,6 +12,12 @@ document.addEventListener('keypress',function(){
     }
     
 })
+document.addEventListener('touchstart', function() {
+    if (level == 0) {
+        started = true;
+        levelup();
+    }
+});
 
 // ye level up krne ko
 function levelup(){
